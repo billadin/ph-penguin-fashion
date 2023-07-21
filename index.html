@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashoin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        .bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-[#FFFBF0]">
@@ -12,16 +25,27 @@
             <div class="nav-logo w-1/4">
                 <img src="icons/logo.png" alt="">
             </div>
-            <ul class="flex gap-x-14 items-center text-base font-medium">
+            <ul class="flex gap-x-14 items-center text-base font-medium roboto">
                 <li><a href="">Home</a></li>
                 <li><a href="">Product</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
         </nav>
+        <div class="w-10/12 pt-5 pb-24 mx-auto flex gap-x-36  justify-between items-center">
+            <div class="banner-info">
+                <h1 class="banner-title text-[#FABE4C] text-7xl font-normal mb-1 uppercase bebas">Be the Penguins<br>
+                    <span class="text-[#363958]">of Winter</span></h1>
+                <p class="banner-desc text-[#3E3E3E] text-base mb-3 roboto">Lorem Ipsum is simply dummy text of the printing<br> 
+                    and typesetting industry.</p>
+                <button class="banner-btn py-4 px-8 rounded-lg bg-[#A4BC46] text-[#FFF] text-base font-medium roboto">Buy Now</button>
+            </div>
+            <div class="banner-img-container w-1/2">
+                <img src="images/model.png">
+            </div>
+        </div>
     </header>
     <main>
-
     </main>
     <footer>
 
